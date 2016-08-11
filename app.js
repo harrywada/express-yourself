@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res, next){
   res.render("index.ejs", {
     name: "Harry Wada",
-    img: "img/profile.jpg",
+    img: "./img/profile.jpg",
     skills: [
       "HTML",
       "CSS",
@@ -24,7 +24,7 @@ app.get("/", function(req, res, next){
     ]
   });
 });
-app.use(express.static("views"));
+app.use(express.static("public"));
 
 const port = 3000;
 http.createServer(app).listen(port);
