@@ -1,0 +1,28 @@
+.container{
+  width: 80%;
+
+  margin: 50px auto;
+}
+
+#profile{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+}
+
+#info{
+  display: inline-block;
+  width: 60%;
+
+  padding: 0 5%;
+  margin-left: -4px;
+  vertical-align: top;
+}
+
+.activities{
+  display: inline-block;
+  width: 50%;
+
+  margin-left: -4px;
+  vertical-align: top;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>express-yourself</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img id="profile" src="<%= img %>" />
+      <div id="info">
+        <h3>Hi, my name is <%= name %>, and I am an aspiring web developer. I currently attend Westwood High School in Austin, TX and am entering my Junior year. I have a passion for working with computers, whether that be web development, software development, data analytics, etc. and thoroughly enjoy what I do.</h3>
+
+        <div class="activities">
+          <h5>Skills: </h5>
+          <ul>
+            <% for(skill in skills){ %>
+              <li class="skill"><%= skills[skill] %></li>
+            <% } %>
+          </ul>
+        </div>
+
+        <div class="activities">
+          <h5>Hobbies: </h5>
+          <ul>
+            <% for(hobby in hobbies){ %>
+              <li class="skill"><%= hobbies[hobby] %></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
